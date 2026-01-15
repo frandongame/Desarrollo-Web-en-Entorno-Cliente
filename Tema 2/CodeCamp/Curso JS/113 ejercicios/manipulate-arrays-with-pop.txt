@@ -1,0 +1,11 @@
+** start of script.js **
+
+// Configuración
+const myArray = [["John", 23], ["cat", 2]];
+
+// Cambia solo el código debajo de esta línea
+var removedFromMyArray = myArray.pop();
+console.log(removedFromMyArray);
+
+** end of script.js **
+

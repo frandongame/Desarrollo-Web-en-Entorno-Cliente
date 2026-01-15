@@ -1,0 +1,6 @@
+** start of script.js **
+
+const quotient = 4.4 / 2.0; // Cambia esta línea
+
+** end of script.js **
+

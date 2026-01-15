@@ -1,0 +1,9 @@
+** start of script.js **
+
+// Cambia el código debajo de esta línea
+const someAdjective = "asdf";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+
+** end of script.js **
+

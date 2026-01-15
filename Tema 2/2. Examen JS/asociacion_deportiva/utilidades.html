@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilidades - AD Castro Urdiales</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">Inicio</a>
+        </header>
+
+    <h1>Utilidades de la Asociación</h1>
+
+    <div class="container">
+        
+        <nav id="columna-izquierda">
+            <h3>Herramientas</h3>
+            <ul>
+                <li><a href="#" onclick="calcularIMC()">Calculadora de IMC</a></li>
+                <li><a href="#" onclick="calcularFCM()">Calculadora de FCM</a></li>
+                <li><a href="#" onclick="determinarCategoria()">Calcular Categoría</a></li>
+                <li><a href="#" onclick="consultarHorario()">Ver Horarios</a></li>
+            </ul>
+        </nav>
+
+        <main id="cuerpo-central">
+            <h2>Resultado</h2>
+            <p>Selecciona una utilidad del menú de la izquierda.</p>
+            
+            <div 
+                id="resultado">
+            </div>
+            
+        </main>
+
+        <aside id="columna-derecha">
+            <h3>Noticias</h3>
+            <p>(Próximamente...)</p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <h3>Para más información, no dudes en contactarnos: +34 123 456 789</h3>
+        <p>Derechos reservados 2025</p>
+    </footer>
+
+    <script src="imc.js"></script>
+    <script src="fcm.js"></script>
+    <script src="categoria.js"></script>
+    <script src="horario.js"></script>
+
+</body>
+</html>

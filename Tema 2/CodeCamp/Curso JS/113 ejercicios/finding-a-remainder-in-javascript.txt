@@ -1,0 +1,6 @@
+** start of script.js **
+
+var remainder = 11 % 3;
+
+** end of script.js **
+

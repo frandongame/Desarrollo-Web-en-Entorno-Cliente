@@ -1,0 +1,9 @@
+** start of script.js **
+
+let dog = {
+  name: "Aflac",
+  numLegs: 4
+};
+
+** end of script.js **
+

@@ -1,0 +1,6 @@
+** start of script.js **
+
+const myStr = "This is the start. " + "This is the end."; // Cambia esta línea
+
+** end of script.js **
+

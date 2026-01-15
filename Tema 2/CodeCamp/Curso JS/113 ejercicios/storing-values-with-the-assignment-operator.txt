@@ -1,0 +1,12 @@
+** start of script.js **
+
+// Configuración
+var a;
+
+// Cambia solo el código debajo de esta línea
+
+var a;
+a = 7;
+
+** end of script.js **
+

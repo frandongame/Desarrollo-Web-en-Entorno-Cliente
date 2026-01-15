@@ -1,0 +1,10 @@
+** start of script.js **
+
+function functionWithArgs(one, two) {
+  console.log(one + two);
+}
+
+functionWithArgs(1, 2);
+
+** end of script.js **
+

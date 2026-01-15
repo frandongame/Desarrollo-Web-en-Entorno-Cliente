@@ -1,0 +1,12 @@
+** start of script.js **
+
+function Bird() {
+  let weight = 15;
+
+  this.getWeight = function() {
+    return weight;
+  };
+}
+
+** end of script.js **
+

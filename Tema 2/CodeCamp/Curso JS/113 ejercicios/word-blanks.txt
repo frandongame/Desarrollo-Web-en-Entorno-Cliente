@@ -1,0 +1,13 @@
+** start of script.js **
+
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Cambia solo el código debajo de esta línea
+const wordBlanks = "I saw a " + myNoun + " that was very " + myAdjective + " and I " + myVerb + " very " + myAdverb + "."; // Cambia esta línea
+// Cambia solo el código encima de esta línea
+
+** end of script.js **
+

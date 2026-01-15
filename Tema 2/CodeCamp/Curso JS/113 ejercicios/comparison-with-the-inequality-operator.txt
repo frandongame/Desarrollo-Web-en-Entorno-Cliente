@@ -1,0 +1,14 @@
+** start of script.js **
+
+// Configuración
+function testNotEqual(val) {
+  if (val != 99) { // Cambia esta línea
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(10);
+
+** end of script.js **
+

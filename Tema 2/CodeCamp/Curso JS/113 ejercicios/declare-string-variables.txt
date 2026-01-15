@@ -1,0 +1,7 @@
+** start of script.js **
+
+var myFirstName = "Fran";
+var myLastName = "Valcarcel";
+
+** end of script.js **
+

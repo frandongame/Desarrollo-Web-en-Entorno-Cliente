@@ -1,0 +1,46 @@
+** start of script.js **
+
+function checkCashRegister(price, cash, cid) {
+  let changeDue = cash - price;
+  const units = {
+    "PENNY": 0.01,
+    "NICKEL": 0.05,
+    "DIME": 0.1,
+    "QUARTER": 0.25,
+    "ONE": 1,
+    "FIVE": 5,
+    "TEN": 10,
+    "TWENTY": 20,
+    "ONE HUNDRED": 100
+  };
+
+  let totalCID = cid.reduce((s, e) => s + e[1], 0);
+  if (totalCID < changeDue) return {status: "INSUFFICIENT_FUNDS", change: []};
+  if (totalCID === changeDue) return {status: "CLOSED", change: cid};
+
+  let result = [];
+  cid = cid.reverse();
+
+  for (let i = 0; i < cid.length; i++) {
+    let name = cid[i][0];
+    let value = units[name];
+    let amount = 0;
+
+    while (changeDue >= value && cid[i][1] > 0) {
+      changeDue = (changeDue - value).toFixed(2);
+      cid[i][1] = (cid[i][1] - value).toFixed(2);
+      amount += value;
+    }
+
+    if (amount > 0) {
+      result.push([name, Number(amount.toFixed(2))]);
+    }
+  }
+
+  if (changeDue > 0) return {status: "INSUFFICIENT_FUNDS", change: []};
+  return {status: "OPEN", change: result};
+}
+
+
+** end of script.js **
+
