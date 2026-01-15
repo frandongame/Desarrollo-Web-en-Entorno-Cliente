@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.carta {
+    height: 100px;
+    background-color: blue;
+    cursor: pointer;
+    display: flex;             
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.carta img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: none; 
+}
+
+.carta.visible img {
+    display: block;
+}
+
+.carta.resuelto {
+    background-color: #66bb6a;
+    cursor: default;
+}
+
+.carta.resuelto img {
+    display: block;
+}

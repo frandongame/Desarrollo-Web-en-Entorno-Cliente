@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones regulares</title>
+    <link rel="stylesheet" href="estilos_expresionesregulares.css">
+</head>
+<body>
+
+    <h1>Formulario de Control</h1>
+    
+    <form id="miFormulario" novalidate>
+        
+        <label for="fecha">Fecha (dd/mm/aaaa):</label>
+        <input type="text" id="fecha">
+
+        <label for="cocinero">Cocinero (XX$1234):</label>
+        <input type="text" id="cocinero">
+
+        <label for="destinatario">Destinatario (XX_ciudad:1234):</label>
+        <input type="text" id="destinatario">
+
+        <label for="gramos">Gramos (100-5000):</label>
+        <input type="number" id="gramos">
+
+        <label for="composicion">Composición (200gC3OH7):</label>
+        <input type="text" id="composicion">
+
+        <label for="cuenta">Cuenta EEUU:</label>
+        <input type="text" id="cuenta">
+        
+        <label>Cuenta Verificada:</label>
+        <input type="text" id="cuentaCorrecta" readonly>
+
+        <br>
+        <button type="submit">Validar Información</button>
+    </form>
+
+    <script src="t5e4_expresionesregulares.js"></script>
+</body>
+</html>
