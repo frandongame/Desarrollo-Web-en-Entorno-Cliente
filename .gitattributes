@@ -1,2 +1,15 @@
-1º[[:space:]]Trimestre/** filter=lfs diff=lfs merge=lfs -text
-2º[[:space:]]Trimestre/** filter=lfs diff=lfs merge=lfs -text
+# 1. Ignorar TODO
+*
+
+# 2. No ignorar la configuración de git
+!.gitignore
+
+# 3. ¡PERO! Déjame subir mis archivos de código (Añade los que uses)
+!*.html
+!*.css
+!*.js
+!*.php
+!README.md
+
+# 4. Y permite entrar en las carpetas (importante para que encuentre el código dentro)
+!*/
