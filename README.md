@@ -1,6 +1,6 @@
 <div align="center">
 
-  # 💻 Entorno Cliente (DAW)
+  # Entorno Cliente (DAW)
   ### Desarrollo de Aplicaciones Web - 2º Curso
 
   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -13,13 +13,13 @@
 
 ---
 
-## 📖 Sobre el Repositorio
+## Sobre el Repositorio
 
-¡Bienvenido! 👋 Este es el repositorio oficial de la asignatura de **Entorno Cliente** correspondiente al Grado Superior de **Desarrollo de Aplicaciones Web (DAW)**.
+¡Bienvenido! Este es el repositorio oficial de la asignatura de **Entorno Cliente** correspondiente al Grado Superior de **Desarrollo de Aplicaciones Web (DAW)**.
 
 Aquí encontrarás una recopilación de todo el trabajo práctico realizado a lo largo del segundo año. El objetivo principal es documentar mi aprendizaje y progreso en tecnologías del lado del cliente.
 
-### 🗂️ Contenido
+### Contenido
 
 En este repositorio están subidos:
 
@@ -38,8 +38,3 @@ El espíritu de este repositorio es educativo y de código abierto.
 
 Si encuentras algún error o tienes una sugerencia de mejora, ¡no dudes en abrir un *Issue* o contactarme!
 
----
-
-<div align="center">
-  <small>Desarrollado con ❤️ y mucho ☕ por [Tu Nombre/Usuario]</small>
-</div>
