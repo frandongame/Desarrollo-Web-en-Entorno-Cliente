@@ -1,0 +1,125 @@
+/* --- MIS ESTILOS GLOBALES --- */
+/* Uso esta clase para forzar la fuente en todos lados */
+.fuente { font-family: 'Courier New', Courier, monospace !important; }
+.blanco { color: white !important; }
+.rojo   { color: red !important; } 
+.verde  { color: #00ff00 !important; }
+
+/* Reseteo básico para quitar márgenes por defecto */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  height: 100vh; width: 100vw; overflow: hidden;
+  /* Mi imagen de fondo */
+  background-image: url('imagenes/monitor.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Centro todo el contenido en la pantalla */
+  display: flex; justify-content: center; align-items: center; text-align: center;
+}
+
+/* --- ESTRUCTURA PRINCIPAL --- */
+.app {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  justify-content: center; align-items: center; gap: 15px;
+}
+
+/* Este bloque mantiene el ancho fijo para que nada baile */
+.bloque {
+  width: 600px;
+  display: flex; flex-direction: column; align-items: center;
+}
+
+/* Posiciones para mis textos y botones */
+.arriba { justify-content: flex-end; min-height: 80px; }
+.centro { justify-content: center; flex: 0 0 auto; }
+.abajo  { justify-content: flex-start; min-height: 300px; }
+
+/* --- MI BARRA DE CARGA --- */
+.barra {
+  width: 100%; height: 40px; border: 2px solid white;
+  position: relative; background: transparent;
+}
+
+.relleno {
+  height: 100%; background-color: white;
+  /* El ancho lo controlo desde React con style={{ width }} */
+}
+
+.porcentaje {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  display: flex; justify-content: center; align-items: center;
+  color: black; font-weight: bold; font-size: 1rem;
+  mix-blend-mode: difference; /* Truco para que el texto se lea bien encima del blanco */
+}
+
+/* --- TEXTOS --- */
+h1, h2, p { text-shadow: 2px 2px 0 #000; }
+.grande { font-size: 1.3rem; font-weight: bold; }
+.titulo { font-size: 3rem; margin-bottom: 30px; }
+.enunciado { font-size: 1rem; font-weight: bold; margin-bottom: 5px; }
+
+/* --- BOTONES --- */
+button {
+  background: black; border: 2px solid white;
+  padding: 10px 20px; margin: 5px; cursor: pointer;
+  font-size: 16px; font-weight: bold;
+}
+button:hover { background: white; color: black !important; }
+
+/* Animaciones y posiciones de los botones */
+.btn-inicio { transform: scale(1.5); }
+.zona-btns { position: relative; display: flex; justify-content: center; }
+
+.btn-si { margin-right: 20px; }
+.si-f3 { transform: scale(1.2); }
+.si-f4 { transform: scale(1.5); }
+
+.btn-no { position: relative; }
+/* Muevo el botón NO para que sea difícil de clicar */
+.no-f4 { position: absolute; top: 150px; left: 100px; transform: scale(0.6); }
+.roto { 
+  border-style: dashed; color: red !important; border-color: red; 
+  transform: rotate(15deg); opacity: 0.6; pointer-events: none; 
+}
+
+/* --- JUEGO (Grid para los puzzles) --- */
+.tablero {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 15px;
+  width: 100%; text-align: left;
+}
+
+.caja { border: 1px solid white; padding: 10px; text-align: center; }
+.izq { text-align: left; }
+
+.controles { display: flex; justify-content: center; gap: 10px; align-items: center; }
+.num { font-size: 1.5rem; width: 30px; }
+
+/* --- FORMULARIO FINAL --- */
+input {
+  background: black; border: 1px solid white;
+  padding: 8px; font-size: 18px; text-align: center;
+  margin-top: 5px; width: 100%;
+}
+.i-cod { width: 150px; } 
+
+.form { width: 100%; border: none; padding: 0; }
+.margen { margin-top: 20px; }
+
+.fila { display: flex; align-items: center; width: 100%; margin-bottom: 10px; gap: 10px; }
+.entrada { width: 40% !important; margin: 0 !important; }
+
+.aviso {
+  width: 60%; text-align: left; font-size: 0.9rem;
+  font-style: italic; opacity: 0; color: white;
+}
+.visible { opacity: 1; }
+
+.zona-check { margin: 20px 0; text-align: left; font-size: 0.9rem; }
+.check { width: auto; margin-right: 10px; }
+
+.btn-total { width: 100%; }
+.btn-chico { padding: 5px 10px; margin: 0; }
+.btn-mini { font-size: 0.8rem; padding: 5px; margin: 2px; }
